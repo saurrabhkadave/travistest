@@ -1,0 +1,4 @@
+install:
+- npm install newman
+script:
+- node_modules/.bin/newman run tests/TestCollection.json -e tests/NewmanTestEnvironment.json -d tests/DataDrivenInputs.csv
